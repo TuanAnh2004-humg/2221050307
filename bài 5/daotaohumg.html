@@ -8,6 +8,8 @@
         body{
             margin: 0;
             padding: 0;
+            height: 100%;
+
         }
         .menu{
             background-color: #2fa4e7;
@@ -40,7 +42,9 @@
            */
             border-right: 1px solid rgb(0, 166, 255);
             width: 20%;
-            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
         }
         p { 
             margin: 0px;
@@ -51,7 +55,8 @@
         }
         .khoi-phai{
             width: 80%;
-            height: 90vh;
+            
+            
         }
         .khoi-dang-nhap{
             width: 90%;
@@ -134,6 +139,7 @@
             margin-bottom: 30px;
             border-bottom: 1px solid #a3aaae ;
             padding-bottom: 10px ; 
+            align-items: center;
         }
         .thong-bao-3{
             width: 50%;
@@ -186,7 +192,45 @@
             height: 100%;
             border-radius: 5px;
         }
+        .khoi-trang-chu{
+            width: 90%;
+            margin: auto;
+        }
+        .trang-chu{
+            padding:10px 10px ;
+            color:rgb(0, 166, 255);
+            border-bottom: 1px solid rgb(0, 166, 255);
+        }
+        .khao-sat{
+            padding:10px 10px ;
+            color:rgb(0, 166, 255);
+            border-bottom: 1px solid rgb(0, 166, 255);
+        }
+        .khoi-duoi{
+            width: 90%;
+            padding-bottom: 20px;
+        }
+        .khoi-duoi-1{
+            padding: 15px 40px;
+            display: flex;
+        }
+        .khoi-duoi-1 img{
+            width: 100%;
+            height: 5vh;
+        }
+        .khoi-duoi-2{
+            padding: 0 60px;
+        }
+        .khoi-duoi-2 p{
+            color:black;
+            text-align: center;
+        }
+        .link{
+            color:rgb(0, 166, 255);
+           
+        }
         
+       
         
         
     </style>
@@ -204,6 +248,7 @@
         <!-- nội dung chính -->
         <main>
             <div class="khoi-trai">
+                <div class="khoi-tren">
                 <div class="khoi-dang-nhap">
                     <form action="">
                         <div class="thong-tin">
@@ -221,12 +266,25 @@
                             </div>
                             <div class="chuc-nang-dang-nhap">
                                 <button class="dang-nhap">Đăng nhập</button>
-                                <button class="dang-nhap-365">đăng nhập với mcr</button>
+                                <button class="dang-nhap-365">Đăng nhập với Microsoft office 365</button>
                             </div>
-                        </div>
-
-                    </form>
+                            </form>
                 </div>
+                <div class ="khoi-trang-chu">
+                    <div class="trang-chu"> Trang chủ </div>
+                    <div class="khao-sat"> Khảo sát đánh giá </div>
+                </div>
+                </div>
+                <div class="khoi-duoi">
+                    <div class="khoi-duoi-1">
+                        <img src="logo.png" alt="Logo trường">
+                    </div>
+                    <div class="khoi-duoi-2"> 
+                        <p>MOHN-V 2026.08F.29</p>
+                        <p>Design by <a class="link" href="#">agtech.vn</a></p>
+                    </div>
+                </div>
+            </div>
             
             <div class="khoi-phai"> 
                 <!--tin tức-->
@@ -248,7 +306,7 @@
                                 <div class="duong-ke"></div>
                                 <p>05/05/2026</p>
                             </div>
-                            <div>về việc đăng kí khối lượng học tập kỳ phụ năm học 2025-2026</div>
+                            <div>Về việc đăng kí khối lượng học tập kỳ phụ năm học 2025-2026</div>
                         </div>
                         <div class="bai-viet">
                             <div class="bai-viet-khoi-anh">
@@ -258,17 +316,17 @@
                                 <div class="duong-ke"></div>
                                 <p>05/05/2026</p>
                             </div>
-                            <div>về việc đăng kí khối lượng học tập kỳ phụ năm học 2025-2026</div>
+                            <div>Về việc nghỉ học</div>
                         </div>
                         <div class="bai-viet">
                             <div class="bai-viet-khoi-anh">
-                                <img src="no img.png" alt="">
+                                <img src="tin3.png" alt="">
                             </div>
                             <div class="bai-viet-thoi-gian">
                                 <div class="duong-ke"></div>
                                 <p>05/05/2026</p>
                             </div>
-                            <div>về việc đăng kí khối lượng học tập kỳ phụ năm học 2025-2026</div>
+                            <div>Trường Đại học Mỏ – Địa chất đạt chứng nhận kiểm định chất lượng cơ sở giáo dục (chu kỳ 2)</div>
                         </div>
                     </div>
 
@@ -277,7 +335,7 @@
 
                 <div class="tin ">
                     <div class="tin-1">
-                        <h3 class="tieu-de">Tin tức</h3>
+                        <h3 class="tieu-de">Thông báo</h3>
                         <p>
                             <a class="xem-tiep" href="">
                                 Xem tiếp
@@ -288,38 +346,39 @@
                     <div class="gop-khoi">
                         <div class="bai-viet thong-bao">
                             <div class="bai-viet-khoi-anh">
-                                <img src="no img.png" alt="">
+                                <img src="thong bao 1.png" alt="">
                             </div>
                             <div class="bai-viet-thoi-gian">
                                 <div class="duong-ke"></div>
                                 <p>05/05/2026</p>
                             </div>
-                            <div>về việc ghép lớp và mở học kì 1 năm học 2025-2026</div>
+                            <div>Về việc chuyển hình thức học tập</div>
                         </div>
                         <div class="bai-viet thong-bao">
                             <div class="bai-viet-khoi-anh">
-                                <img src="no img.png" alt="">
+                                <img src="thong bao 2.png" alt="">
                             </div>
                             <div class="bai-viet-thoi-gian">
                                 <div class="duong-ke"></div>
                                 <p>05/05/2026</p>
                             </div>
-                            <div>Thông báo về việv nghỉ lễ 2/9</div>
+                            <div>Về việc ghép lớp và mở lớp học kì 1 năm học 2026-2027</div>
                         </div>
                     </div>
                         
                         <!--bài viết 3-->
                         <div class="thong-bao-3">
                             <div class="tin-tuc">
-                                <a class="noi-dung" href="#">thong bao ve le tot nghiep </a>
+                                <a class="noi-dung" href="#">Thông báo về việc thực tập tốt nghiệp/doanh nghiệp và Đồ án/khóa luận tốt nghiệp của sinh viên đợt 1A năm học 2026-2027 </a>
                                 <p class="thoi-gian">9/12/2026</p>
                             </div>
                             <div class="tin-tuc">
-                                 <a class="noi-dung" href="#">thong bao ve le tot nghiep </a>
+                                 <a class="noi-dung" href="#">Về việc đăng ký khối lượng học tập học kỳ 1 năm học 2026-2027	 </a>
                                 <p class="thoi-gian">9/12/2026</p>
                             </div>
                             <div class="tin-tuc">
-                                 <a class="noi-dung" href="#">thong bao ve le tot nghiep </a>
+                                 <a class="noi-dung" href="#">Thông báo về việc kiểm tra điều kiện xét tốt nghiệp đợt 3 năm học 2025-2026</a>
+
                                 <p class="thoi-gian">9/12/2026</p>
                             </div>
                         </div>
@@ -330,7 +389,7 @@
                 <!--hướng dẫn-->
                  <div class="tin ">
                     <div class="tin-1">
-                        <h3 class="tieu-de">Tin tức</h3>
+                        <h3 class="tieu-de">Hướng dẫn</h3>
                         <p>
                             <a class="xem-tiep" href="">
                                 Xem tiếp
@@ -341,38 +400,38 @@
                     <div class="gop-khoi">
                         <div class="bai-viet thong-bao">
                             <div class="bai-viet-khoi-anh">
-                                <img src="no img.png" alt="">
+                                <img src="huong dan 1.png" alt="">
                             </div>
                             <div class="bai-viet-thoi-gian">
                                 <div class="duong-ke"></div>
                                 <p>05/05/2026</p>
                             </div>
-                            <div>về việc ghép lớp và mở học kì 1 năm học 2025-2026</div>
+                            <div>Hướng dẫn đăng ký khối lượng học tập tại trang web</div>
                         </div>
                         <div class="bai-viet thong-bao">
                             <div class="bai-viet-khoi-anh">
-                                <img src="no img.png" alt="">
+                                <img src="huong dan 2.png" alt="">
                             </div>
                             <div class="bai-viet-thoi-gian">
                                 <div class="duong-ke"></div>
                                 <p>05/05/2026</p>
                             </div>
-                            <div>Thông báo về việv nghỉ lễ 2/9</div>
+                            <div>Hướng dẫn lấy lại mật khẩu trang web daotaodaihoc.humg.edu.vn</div>
                         </div>
                     </div>
                         
                         <!--bài viết 3-->
                         <div class="thong-bao-3">
                             <div class="tin-tuc">
-                                <a class="noi-dung" href="#">thong bao ve le tot nghiep </a>
+                                <a class="noi-dung" href="#">Hướng dẫn lấy lại mật khẩu e-mail HUMG </a>
                                 <p class="thoi-gian">9/12/2026</p>
                             </div>
                             <div class="tin-tuc">
-                                 <a class="noi-dung" href="#">thong bao ve le tot nghiep </a>
+                                 <a class="noi-dung" href="#">Thông báo về việc thực tập tốt nghiệp/doanh nghiệp và Đồ án/khóa luận tốt nghiệp của sinh viên đợt 1A năm học 2026-2027 </a>
                                 <p class="thoi-gian">9/12/2026</p>
                             </div>
                             <div class="tin-tuc">
-                                 <a class="noi-dung" href="#">thong bao ve le tot nghiep </a>
+                                 <a class="noi-dung" href="#">Về việc đăng ký khối lượng học tập học kỳ 1 năm học 2026-2027 </a>
                                 <p class="thoi-gian">9/12/2026</p>
                             </div>
                         </div>
@@ -387,10 +446,10 @@
                     </div>
                     <div class="danh-sach-cai-dat">
                         <div class="ma-qr">
-                                <img src="no img.png" alt="">
+                                <img src="qr1.png" alt="">
                             </div>
                              <div class="ma-qr">
-                                <img src="no img.png" alt="">
+                                <img src="qr2.png" alt="">
                             </div>
                     </div>
             </div>
