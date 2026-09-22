@@ -1,0 +1,79 @@
+body{
+    background-color:#0b0f19;
+    margin:0;
+    padding:0;
+    color: white;
+}
+.menu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    border-bottom: 1px solid rgba(240, 238, 238, 0.23);
+    width: 90%;
+    margin: 0 auto;
+}
+.menu-trai{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.logo{
+    width: 90px;
+}
+.danh-sach-menu{
+    display: flex;
+    gap : 30px;
+}
+.kenh{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+.mua-goi{
+    color: white;
+    background-color:rgb(227, 99, 13);
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+}
+.noi-dung-chinh{
+    width: 100%;
+    margin:30px auto;
+    display:flex;
+    justify-content:center;
+}
+.anh-chinh{
+    width: 60%;
+    border-radius: 15px;
+}
+footer{
+    width: 95%;
+    margin: 0 auto;
+}
+
+h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.danh-sach-kenh{
+    display: flex;
+    gap: 10px;
+
+    img{
+        border-radius: 10px;
+    }
+}
+.truc-tiep{
+    margin-top: 30px;
+}
+.ten-truc-tiep{ 
+    h3{
+    font-size: 26px;
+    }
+    img{
+        border-radius: 10px;
+    }
+}
