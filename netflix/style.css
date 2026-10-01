@@ -77,14 +77,16 @@ footer{
 }
 .anh{
     width: 19%;
+    height: 30vh;
     img{
-        width: 200px;
-        height: 200px;
+        width: 100%;
+        height: 100%;
         border-radius: 100%;
     }
 }
 .khoi-duoi-2{
+    width: 60%;
     display: flex;
-    gap : 100px;
-    justify-content:center;
+    justify-content:space-evenly;
+    margin: 20px auto;
 }

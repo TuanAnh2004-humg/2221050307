@@ -49,7 +49,7 @@ a{
     width: 60%;
     border-radius: 15px;
 }
-footer{
+footer{ 
     width: 95%;
     margin: 0 auto;
 }
@@ -67,13 +67,75 @@ h3{
     }
 }
 .truc-tiep{
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .ten-truc-tiep{ 
     h3{
-    font-size: 26px;
+    font-size: 24px;
     }
     img{
         border-radius: 10px;
+    }
+}
+.he-thong{
+    margin-top: 50px;
+    img{
+        width: 100%;
+        border-radius:10px;
+    }
+}
+.tin-tuc{
+    margin-top: 50px;
+}
+.danh-sach-tin-tuc{
+    display: flex;}
+.danh-sach-trai{
+    width: 30%;
+
+}
+.muc-danh-sach{
+    display: flex;
+    align-items:center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.dang-chon{
+    background-color: #262c3a;
+    border-radius: 8px;
+    padding: 10px;
+}
+.muc-danh-sach:hover{
+    background-color: #262c3a;
+    border-radius: 8px;
+}
+.danh-sach-trai-tren{
+    padding: 20px;
+}
+
+.danh-sach-trai-duoi{
+    width: 95%;
+    margin-top: 20px;
+    border-top: 1px solid rgba(183, 180, 180, 0.173);
+    p{
+        padding: 15px 0;
+    }
+}
+.danh-sach-phai{
+    width: 70%;
+    img{
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+.noi-bat{
+    margin-top: 30px;
+}
+.anh-noi-bat{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    img{
+        width: 10%;
+        border-radius: 100%;
     }
 }
