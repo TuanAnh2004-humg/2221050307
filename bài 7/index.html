@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 7 - JS</title>
+</head>
+<body>
+    <script>
+        document.write("hello <br> world");
+
+        var tenSinhVien = "Tuan Anh";
+        var tuoi = 21;
+        document.write(tenSinhVien);
+        document.write(tuoi);
+        document.write(tenSinhVien + "<br>" + tuoi + "<br>");
+
+        var soThuNhat = 10;
+        var soThuHai = 5;
+        // = - * /
+        // % : chia lấy dư
+        var ketQua = soThuNhat + soThuHai;
+        document.write(" Kết quả là " + ketQua + "<br>");
+
+        // ++ : tăng 1
+        // -- : giảm 1
+        // += : cộng thêm
+        // -= : trừ đi
+        // *= : nhân thêm
+        // /= : chia thêm
+        // %= : chia lấy dư thêm
+        // ++ soThuNhat : trước khi tính toán thì tăng 1
+        // soThuNhat ++ : sau khi tính toán thì tăng 1
+        
+        document.write( ++ soThuNhat);
+        document.write( -- soThuNhat);
+
+        soThuNhat+= soThuHai;
+        document.write(soThuNhat);
+        var a = "10";
+        var b = "5.5";
+        var tong = parseInt(a) + parseFloat(b);
+        document.write(tong);
+
+        //string 
+        document.write("<br>");
+        document.write(tenSinhVien.length);
+
+        // noi chuoi
+        // tim vi tri xuat hien dau tien 
+        document.write("<br>");
+        document.write(tenSinhVien.indexOf("a"))
+
+        //kiem tra xem tu co trong chuoi khong co = true/ sai=falue
+        document.write("<br>");
+        document.write(tenSinhVien.includes("a"));
+
+        // replace : thay the
+        document.write("<br>");
+        document.write(tenSinhVien.replace("a","o"));
+
+        // kiểm tra kí tự bắt đầu
+        document.write("<br>");
+        document.write(tenSinhVien.startsWith("Nguyen"));
+
+        // viết hoa
+        document.write("<br>");
+        document.write(tenSinhVien.toUpperCase());
+
+        // viết thường
+        document.write("<br>");
+        document.write(tenSinhVien.toLowerCase());
+
+        // kiểm tra dữ liệu có phải số hay không
+        document.write("<br>");
+        document.write(isNaN(a));
+
+        //date
+        var homNay = new Date();
+        document.write("<br>");
+        document.write(homNay); 
+
+        // tháng - ngày - năm
+        var ngay = new Date("10/20/2026")
+        document.write("<br>");
+        document.write(ngay);
+
+        //năm
+        var nam = homNay.getYear();
+        document.write("<br>");
+        document.write(nam);
+
+        var namSinhAnh = nam - tuoi;
+        document.write("<br>");
+        document.write( " Tuấn Anh sinh năm : " + namSinhAnh);
+
+        var mangSo = [1,2,3,4,5,6,7,8,9,10];
+        var mangTen = ["Bin", "Tuan", "Anh"];
+        var thongTin = ["Bin", 21, false];
+
+        document.write("<br>");
+        document.write(mangSo[0]);
+
+        document.write("<br>");
+        document.write(mangTen[1]);
+
+        document.write("<br>");
+        document.write(thongTin[0]);
+
+        // kiểm tra độ dài mảng
+        document.write("<br>");
+        document.write(mangSo.length);
+
+        // gộp mảng
+        document.write("<br>");
+        var mang = mangSo.concat(mangTen);
+        document.write(mang);
+
+        //join
+        document.write("<br>");
+        document.write(mang.join(" - "));
+
+
+        document.write("<br>");
+        document.write(soThuNhat);
+        document.write(soThuNhat<= 15)
+
+        document.write("<br>");
+        document.write(soThuNhat > soThuHai) && ( a + b)
+
+        document.write("<br>");
+        document.write((soThuNhat > soThuHai) || ( a > b ));
+
+        document.write("<br>");
+        var diem = 7; 
+        if (diem >= 8) {
+        document.writeln("A");
+        } else {
+        if (diem >= 6.5) {
+        document.writeln("B");
+        } else {
+        if (diem >= 4) {
+            document.writeln("C");
+        } else {
+            document.writeln("F");
+        }
+        }
+        }
+    </script>
+    
+</body>
+</html>

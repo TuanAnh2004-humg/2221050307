@@ -1,0 +1,146 @@
+body{
+    padding: 0;
+    margin: 0 auto;
+    color: white;
+    background-color:rgb(28, 26, 26);
+    width: 80%;
+}
+header{
+    background-color: rgb(28, 26, 26);
+}
+.khoi-tren{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tieu-de{
+    padding: 20px 0;
+    width: 20%;
+}
+.anh-tieu-de{
+    width: 100%;
+}
+.tim-kiem{
+    width: 40%;
+    margin-bottom: 15px;
+}
+.tim-kiem input{
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.612);
+    background-color:rgba(84, 88, 84, 0.118);
+    border-radius: 30px;
+    height: 25px;
+    color: white;
+}
+.khoi-dang-nhap{
+    height: 50px;
+    width: 20%;
+    display: flex;              
+    align-items: center;       
+    justify-content: space-between;
+}
+
+.dang-nhap{
+    height: 100%;
+    width: 30%;
+    border-radius: 10px;
+    background-color:rgba(206, 232, 232, 0.2);
+    color: white;
+}
+.menu{
+    background-color:rgba(78, 77, 77, 0.101);
+}
+.danh-sach-menu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    gap: 10px;
+}
+a{
+    text-decoration: none;
+    color:aliceblue;
+    font-size: 17px;
+}
+.muc{
+    padding: 15px;
+    border-right: 1px solid rgba(5, 5, 5, 0.612);
+}
+.muc:hover{
+    background-color:rgba(240, 248, 255, 0.195);
+}
+.thinh-hanh{
+    margin-top: 30px;
+    font-size: 20px;
+}
+.dang-thinh-hanh{
+    border-bottom: 1px solid rgba(204, 200, 200, 0.19);
+}
+.phim-thinh-hanh{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 20px;
+}
+.phim{
+    width: 18%;
+    img{
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+.phim{
+    margin-top: 30px;
+}
+.danh-sach-ngay{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    padding-left: 0;
+    gap: 5px;
+}
+.ngay{
+    width: 12%;
+    background-color:rgba(240, 248, 255, 0.195);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.dang-chon{
+    background-color:rgba(74, 180, 241, 0.762);
+}
+.ngay:hover{
+     background-color:rgba(74, 180, 241, 0.762);
+}
+.cap-nhat{
+    margin-top: 30px;
+}
+.moi-cap-nhat{
+     border-bottom: 1px solid rgba(204, 200, 200, 0.19);
+}
+.cap-nhat-phim{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 5px;
+}
+.cap-nhat-phim img{
+    width: 100%;
+}
+.so-trang{
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+}
+.trang{
+    padding: 10px;
+}
+.logo-duoi{
+    width: 30%;
+    border-bottom: 1px solid rgba(204, 200, 200, 0.19);
+}
+h3{
+    font-size: 15px;
+}
+.thong-tin{
+    display: flex;
+    justify-content:space-between;
+}
