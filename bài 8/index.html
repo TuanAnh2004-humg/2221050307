@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>tính tổng</h1>
+    <div>
+        Số thứ 1: <input type="number" id="so1">
+    </div>
+    <div>
+        Số thứ 2 : <input type="number" id="so2">
+    </div>
+    <div>
+        <button onclick="tinhTong()">Tính tổng</button>
+    </div>
+    <div>
+        Kết quả : <input type="text" id ="tong">
+    </div>
+    <script>
+        function tinhTong(){
+            var so1 = document.getElementById("so1").value;
+            var so2 = document.getElementById("so2").value;
+            var tong = parseInt(so1) + parseInt(so2);
+            document.getElementById("tong").value = tong;
+        }
+
+
+
+        //function
+        // để tạo function dùng cú pháp
+        // 1. hàm không có tham số
+        // function + tên (){}
+        function xinchao(){
+            var ten = document.getElementById("hoten").value;
+            document.getElementById("ketqua").value = "Xin chào " + ten;
+        }
+
+        // hàm có tham số
+        // function + tên(tham số)
+        // các tham số ngăn cách nhau = dấu ,
+        function xinchao2(ten, tuoi){
+            document.write("Xin chào " + ten + " " + tuoi);
+        }
+        xinchao2("Bin", 22);
+
+        // tạo hàm để tính chu vi hình chữ nhật
+        function tinhChuVi(a, b){
+            var chuVi = (a + b) * 2;
+            document.write("Chu vi hình chữ nhật là: " + chuVi);
+        }
+        tinhChuVi(10, 20);
+
+        var danhSachSinhVien = ["Bùi", "Tuấn","Anh","Bin"];
+        // dùng for in ra xin chào từng tên trong mảng
+        for (var i = 0; i < danhSachSinhVien.length; i++){
+            document.write("Xin chào " + danhSachSinhVien[i] + "<br>");
+        }
+        for (var i = 0; i < danhSachSinhVien.length; i++){
+        if (danhSachSinhVien[i] != "Bin"){
+                document.write("<br> Xin chào " + danhSachSinhVien[i] );
+            }
+        }
+        // danh sách sinh viên, tên sinh viên cần tìm
+        // đầu ra : nếu có thì in ra có sinh viên / nếu không thì kh có sinh viên
+        function timKiemSinhVien(danhSachSinhVien, ten){
+            var coSinhVien = false;
+            for( var i = 0; i < danhSachSinhVien.length; i++){
+                if (danhSachSinhVien[i] == ten){
+                    coSinhVien = true;
+                }
+                if (coSinhVien == true){
+                    document.write("Có sinh viên " + ten + "<br>");
+                } else {
+                    document.write("Không có sinh viên " + ten + "<br>");
+                }
+                }
+        }
+        timKiemSinhVien(danhSachSinhVien, "Bin");
+
+
+    </script>
+</body>
+</html>

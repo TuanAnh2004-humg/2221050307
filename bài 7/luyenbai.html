@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var giaTienA = "150000"; // Dạng chuỗi chữ
+        var giaTienB = "50000.5"; // Dạng chuỗi số thập phân
+
+        // Ép kiểu số nguyên và số thực rồi cộng lại
+        var tongTien = parseInt(giaTienA) + parseFloat(giaTienB);
+
+        document.writeln("Tổng tiền phải trả là: " + tongTien + "<br>");
+        document.writeln( -- giaTienA + "<br>");
+        var maSanPham = "VTVGO_IPHONE_16";
+
+            // 1. Kiểm tra độ dài chuỗi
+        document.writeln("Độ dài mã: " + maSanPham.length + "<br>"); 
+
+        // 2. Kiểm tra xem có chứa từ "IPHONE" không (Trả về true/false)
+        document.writeln("Có chứa chữ IPHONE không? " + maSanPham.includes("IPHONE") + "<br>");
+
+        // 3. Đổi thành chữ thường toàn bộ
+        document.writeln("Viết thường: " + maSanPham.toLowerCase());
+
+
+        document.writeln( "<br>"+"Tuấn Anh" + "<br>");
+        var soThu1 = "10";
+        var soThu2 = "15.5";
+        var tong = parseInt(soThu1) + parseFloat(soThu2);
+        document.writeln(" Tổng là " + tong + "<br>");
+
+        var hoVaTen = "Bui Tuan Anh";
+        document.writeln( hoVaTen.length + "<br>");
+
+        document.writeln( hoVaTen.indexOf("B") + "<br>");
+        document.writeln( hoVaTen.includes("Anh") + "<br>");
+
+        var homNay = new Date();
+        document.write( homNay + "<br>");   
+    </script>
+</body>
+</html>
