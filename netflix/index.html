@@ -37,20 +37,20 @@
                 <h3> Phim hài hước</h3>
             </div>
             <div class="danh-sach-phim">
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
+                <div onclick="chonPhim(1)" class="phim">
+                    <img src="phim1.png" alt="">
                 </div>
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
+                <div onclick="chonPhim(2)" class="phim">
+                    <img src="phim2.png" alt="">
                 </div>
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
+                <div onclick="chonPhim(3)" class="phim">
+                    <img src="phim3.png" alt="">
                 </div>
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
+                <div onclick="chonPhim(4)" class="phim">
+                    <img src="phim4.png" alt="">
                 </div>
-                <div class="phim">
-                    <img src="banner.jpg" alt="">
+                <div onclick="chonPhim(5)" class="phim">
+                    <img src="phim5.png" alt="">
                 </div>
             </div>
             <div class="ten-the-loai">
@@ -139,5 +139,44 @@
             </div>
         </div>
     </footer>
+    <script>
+        var danhsachphim = [
+            {
+                id: 1,
+                ten: "Tập 1",
+                duongDanAnh: "phim1.png" 
+                
+            },
+            {
+                id: 2,
+                ten: "Tập 2",
+                duongDanAnh: "phim2.png" 
+            },
+            {
+                id: 3,
+                ten: "Tập 3",
+                duongDanAnh: "phim3.png"
+            },
+            {
+                id: 4,
+                ten: "Tập 4",
+                duongDanAnh: "phim4.png"
+            },
+            {
+                id: 5,
+                ten: "Tập 5",
+                duongDanAnh: "phim5.png"
+            }
+        ];
+
+        function chonPhim(id) {
+            for (let i = 0; i < danhsachphim.length; i++) {
+                if (danhsachphim[i].id == id) {
+                    document.getElementsByClassName("banner-img")[0].src = danhsachphim[i].duongDanAnh;
+                    break;
+                }
+            }
+        }
+    </script>
 </body>
 </html>

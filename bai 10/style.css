@@ -1,0 +1,42 @@
+        main{
+            display : flex;
+        }
+        .trai{
+            width : 75%;
+            display : flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .phai{
+            width : 25%;
+            border : 1px solid rgb(170, 164, 164);
+            border-radius : 10px;
+        }
+        .video{
+            width: 90%;
+            height : 450px;
+            background-color : rgb(20, 20, 1);
+            border-radius : 20px;
+        }
+        h1{
+            text-align : center;
+        }
+        .bai-hat{
+            width : 95%;
+            height : 80px;
+            margin : 5px auto;
+            display : flex;
+            align-items : center;
+        }
+        .bai-hat:hover{
+            background-color : rgb(235, 235, 235);
+        }
+        img{
+            width : 25%;
+            margin-right: 10px;
+            border-radius : 10px;
+
+        }
+        p{
+            width : 75%;
+        }

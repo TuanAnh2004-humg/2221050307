@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bài 10</title>
+    
+</head>
+<body>
+    <main>
+        <div class="trai">
+            <iframe class=" video" src="https://www.youtube.com/embed/KtMeCi4WpTI?si=szdbWbCP6A9mzv_H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="phai">
+            <h1>danh sách</h1>
+            <div class="danh-sach">
+                <div onclick="chonBai(1)" class="bai-hat">
+                    <img class="anh-bai" src="neunhutachangcon.png" alt="">
+                    <p>Nếu Như Ta Chẳng Còn - MCK (ft. A$AP Ướt Mi)</p>
+                </div>
+                <div onclick="chonBai(2)" class="bai-hat">
+                    <img class="anh-bai" src="matmoitaychan.png" alt="">
+                    <p>Mắt Môi Tay Chân - MCK  </p>
+                </div>
+                <div onclick="chonBai(3)" class="bai-hat">
+                    <img class="anh-bai" src="kesaytinh.png" alt="">
+                    <p>Kẻ Say Tình - Quốc Thiên</p>
+                </div>
+                <div onclick="chonBai(4)"class="bai-hat">
+                    <img class="anh-bai" src="kesaytinh2.png" alt="">
+                    <p>Kẻ Say Tình 2 - Quốc Thiên</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src = "script.js">
+        var danhsachbaihat = [
+            {
+                id : 1,
+                ten :"Nếu Như Ta Chẳng Còn - MCK (ft. A$AP Ướt Mi)",
+                duongDanAnh : " neunhutachangcon.png",
+                duongDanYoutube : "https://www.youtube.com/embed/W9RBSncxrCc?si=GBTFA8fmsFnlIK9m"
+            },
+            {
+                id : 2,
+                ten : "Mắt Môi Tay Chân - MCK",
+                duongDanAnh : "matmoitaychan.png",
+                duongDanYoutube : "https://www.youtube.com/embed/_m2bFhFrAwQ?si=juSKfCob7QxX3fet"
+            },
+            {
+                id : 3,
+                ten : "Kẻ Say Tình - Quốc Thiên",
+                duongDanAnh : "kesaytinh.png",
+                duongDanYoutube : "https://www.youtube.com/embed/F_cUk80nn-s?si=nTII2-Nj"
+            },
+            {
+                id : 4,
+                ten : "Kẻ Say Tình 2 - Quốc Thiên",
+                duongDanAnh : "kesaytinh2.png",
+                duongDanYoutube : "https://www.youtube.com/embed/uUQG8sk7cLs?si=_P9FXtEDiVyrd1Ql"
+            },
+            
+        ]
+        function chonBai(id){
+            for (let i = 0; i < danhsachbaihat.length; i++){
+                if(danhsachbaihat[i].id == id){
+                    document.getElementsByClassName("video")[0].src = danhsachbaihat[i].duongDanYoutube;
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
