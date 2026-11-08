@@ -123,6 +123,6 @@ SELECT * FROM phim;
 -- insert: thêm dữ liệu vào bảng
 INSERT INTO nguoi_dung (ten_dang_nhap, mat_khau, email, so_dien_thoai) VALUES ('Btuananh', 'Btuananh', 'Btuananh@gmail.com', '0333797893'); --không cần thiết phải thêm id vì id là auto_increment
 -- update: cập nhật dữ liệu trong bảng
-UPDATE nguoi_dung SET ten_dang_nhap = 'Btuananh' WHERE id = 1; --'Btuananh' là giá trị mới, id = 1 là đổi tên đăng nhập của người dùng có id = 1 thành 'Pthuy123'
+UPDATE nguoi_dung SET ten_dang_nhap = 'Btuananh' WHERE id = 1; --'Btuananh' là giá trị mới, id = 1 là đổi tên đăng nhập của người dùng có id = 1 thành 'Btuananh'
 -- delete: xóa dữ liệu trong bảng
 DELETE FROM nguoi_dung WHERE id = 1; -- id = 1 là xoá người dùng có id = 1; nếu bỏ WHERE thì sẽ xoá hết dữ liệu trong bảng
