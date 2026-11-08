@@ -10,6 +10,11 @@ header{
     padding: 0 20px;
     background-color:#1c1b20
 }
+.video{
+    width: 90%;
+    height : 550px;
+    border-radius : 20px;
+}
 .danh-sach-muc{
     list-style:none;
     display:flex;
